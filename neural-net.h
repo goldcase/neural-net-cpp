@@ -3,10 +3,19 @@
 
 using namespace std;
 
-class Neuron {
-};
+class Neuron;
 
 typedef vector<Neuron> Layer;
+
+class Neuron {
+    public:
+        Neuron();
+
+    private:
+        double m_output_val;
+        vector<double> m_output_weights;
+};
+
 
 class Net {
     public:
